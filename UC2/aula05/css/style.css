@@ -1,0 +1,80 @@
+/* 
+=======================
+Estilização global 
+=======================
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;     /* Altera o tipo de fonte presente no documento */
+    background-color: #f7f7f7;
+}
+
+p {
+    font-size: 20px;     /* Alterando o tamanho dos parágrafos de 16px para 20px */
+}
+
+a {
+    text-decoration: none; /* Tira qualquer decoração que tenha na tag a */
+}
+
+img {
+    max-width: 100%;   /* Evita o overflow, a img ocupa 100% do elemento pai */  
+}
+
+li {
+    list-style: none; /*  */ 
+}
+
+
+/* 
+=======================
+Estilização do header 
+=======================
+*/
+
+.menu {
+    display: flex;    /* Alinha os itens na horizontal */
+    /*display: grid;*/
+    gap: 20px;        /*  Cria um distânciamento entre os itens */
+}
+
+.menu a {
+    background-color: #ffffff;
+    padding: 15px 30px;     /* Espaçamento interno, quando utilizamos o atalho padding com dois valores, o primeiro valor é para cima/baixo e o segundo valor para direita/esquerda */
+    border-radius: 4px;   /* Arredonda as laterais da borda */
+    color: #000000;
+    text-transform: uppercase;  /* Deixa o texto com letras maiúsculas  */
+}
+
+.menu a:hover {
+    background-color: #ee2211;
+    color: #ffffff;
+}
+
+/* 
+=======================
+Estilização do conteúdo
+=======================
+*/
+
+.conteudo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.botao{
+    background-color: #ee2211;
+    color: #ffffff;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    border-radius: 4px;
+}
+
+.rodape{
+    background-color: #ffffff;
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+}
