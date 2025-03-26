@@ -1,0 +1,16 @@
+body {
+ background-color: black;
+ color: white;
+}
+
+.bloco {
+ background-color: #FFFFFF;
+}
+
+.bloco p {
+ background-color: rgb(100, 50, 250);
+}
+
+.bloco a {
+ background-color: rgba(100, 50, 250, 0.5);
+}

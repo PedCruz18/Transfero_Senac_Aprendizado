@@ -1,0 +1,23 @@
+body {
+ background-color: black
+}
+
+h2 {
+ background-color: chocolate;
+ color: violet;
+}
+
+.minha_h2 {
+ background-color: red;
+ color: white;
+}
+
+#seletor_p1 {
+ background-color: purple;
+ color: white;
+}
+
+.deixar_verde {
+ background-color: green;
+ color: white;
+}

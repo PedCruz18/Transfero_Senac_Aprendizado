@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Grid</title>
+ <style>
+  * {
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+  }
+
+  h1 {
+   background-color: red;
+   text-align: center;
+   /* justify-self: center; */
+  }
+
+  .container{
+   background-color: teal;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   /* grid-template-rows: 1fr 1fr; */
+  }
+
+  .container img {
+   max-width: 100%;
+   grid-column: 2;
+  }
+
+ </style>
+</head>
+<body>
+ <h1>Bicicleta - A melhor do mundo</h1>
+ <div class="container">
+  <img src="./img/bicicleta.jpg" alt="Bicicleta">
+  <p>A melhor bicicleta fabricada no mundo. Ela é atual, podente e confortável</p>
+  <a href="">Compre aqui</a>
+ </div>
+</body>
+</html>

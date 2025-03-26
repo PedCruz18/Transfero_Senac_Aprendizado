@@ -1,0 +1,70 @@
+/*
+==========================
+Estilização global
+==========================
+*/
+
+* {
+ box-sizing: border-box;
+ padding: 0;
+ margin: 0;
+}
+
+body {
+ font-family: Arial, Helvetica, sans-serif;
+ background-color: #f7f7f7;
+}
+
+header {
+ display: flex;
+ flex-direction: column;
+ gap: 40px;
+ padding: 40px 0;
+ align-items: center;
+}
+
+p {
+ font-size: 20px;
+}
+
+li {
+ list-style: none;
+}
+
+a {
+ text-decoration: none;
+}
+
+img {
+ max-width: 100%;
+}
+
+/*
+==========================
+Estilização do Header
+==========================
+*/
+
+.logo {
+ display: flex;
+ justify-content: center; 
+ width: 350px;
+}
+
+.menu {
+ display: flex;
+ gap: 8px;
+}
+
+.menu a {
+ background-color: white;
+ color: black;
+ padding: 15px 20px;
+ border-radius: 4px;
+ transition: 0.3s ease;
+}
+
+.menu a:hover {
+ background-color: #ee2211;
+ transform: scale(1.5);
+}
