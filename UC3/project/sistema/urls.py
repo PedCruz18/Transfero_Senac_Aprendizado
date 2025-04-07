@@ -1,6 +1,7 @@
 from django.urls import path
-from sistema import viws
+from sistema import views
 
 urlpatterns = [
-    path('sistema/', viws.index),
+    path('', views.index),
+    path('apresentacao/', views.apresentacao),
 ]
