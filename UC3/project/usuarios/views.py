@@ -13,3 +13,6 @@ def login(request):
         request,
         'login.html'
     )
+    
+def criarUsuario(request):
+    pass
