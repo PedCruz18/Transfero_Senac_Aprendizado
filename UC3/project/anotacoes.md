@@ -16,3 +16,7 @@
 ## Criando e modificando a senha do super usuário Django
 1. Para criar o superuser -> `python manage.py createsuperuser`
 2. Para alterar a senha, caso você esqueça -> `python manage.py changepassword nomedousuario`
+
+# path() -> é um método do django que permite realizar a inserção de uma url.
+if settings.DEBUG: 
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
