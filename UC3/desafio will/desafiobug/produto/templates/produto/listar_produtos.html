@@ -1,0 +1,41 @@
+<!-- Código problemático 
+<h2>Lista de Produtos</h2>
+{% for produto in produtos %}
+    <li>{{ produto.nome }} - {{ produto.preco }} - {{ produto.categoria }}</li>
+     Exibe apenas nome preço e categoria, sem outros detalhes úteis como descrição ou data de criação
+{% endfor %}
+</ul>
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Produtos</title>
+</head>
+<body>
+    <h1>Lista de Produtos</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Descrição</th>
+                <th>Preço</th>
+                <th>Criado em</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for produto in produtos %}
+            <tr>
+                <td>{{ produto.nome }}</td>
+                <td>{{ produto.descricao }}</td>
+                <td>R$ {{ produto.preco }}</td>
+                <td>{{ produto.criado_em }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <br>
+    <a href="{% url 'cadastrar_produto' %}">Cadastrar Novo Produto</a>
+</body>
+</html>

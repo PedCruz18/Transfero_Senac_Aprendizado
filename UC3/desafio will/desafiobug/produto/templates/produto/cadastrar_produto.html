@@ -1,0 +1,26 @@
+<!-- Código problemático
+<h2>Cadastro de Produto</h2>
+<form method="POST">
+    {{ form }}   Exibe o formulário, mas sem formatar os campos adequadamente 
+    <button type="submit">Salvar</button> Botão para enviar o formulário mas sem a token de segurança CSRF
+</form>
+-->
+
+<!-- Codigo resolvido -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastrar Produto</title>
+</head>
+<body>
+    <h1>Cadastrar Produto</h1>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}  <!-- Exibe os campos do formulário -->
+        <button type="submit">Cadastrar</button>
+    </form>
+    <br>
+    <a href="{% url 'listar_produtos' %}">Ver todos os produtos</a>
+</body>
+</html>
