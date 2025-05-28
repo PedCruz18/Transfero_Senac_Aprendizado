@@ -1,6 +1,6 @@
 # Nome do Projeto
 
-Descrição curta e objetiva do projeto, explicando o que ele faz e qual problema resolve.
+
 
 ---
 
